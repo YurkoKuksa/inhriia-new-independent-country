@@ -1,0 +1,99 @@
+/* Normalisator */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* /Normalisator */
+/* VAR */
+:root {
+  --main-background-color: ;
+  --header-background-color: #ece2e2;
+  --footer-background-color: ;
+  --wrapper-background-color: #fff;
+  --left-column-background-color: ;
+  --right-column-background-color: ;
+  --main-text-color: ;
+  --alternative-text-color: #4d4d5b;
+}
+/* /var */
+header {
+  background-color: var(--header-background-color);
+  color: var(--alternative-text-color);
+  margin: 0 5px;
+  border: 1px solid gray;
+  padding: 13px 10px;
+  line-height: 0;
+}
+main {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: rgb(29, 28, 26);
+  color: aliceblue;
+  margin: 0 5px;
+  padding: 2px 10px;
+  border: 2px solid fff;
+}
+.wrapper {
+  background-color: var(--wrapper-background-color);
+  display: flex;
+  flex-direction: row-reverse;
+
+  margin: 0 2px;
+
+  padding: 1px 2px;
+  min-height: 100vh;
+}
+
+.right-box {
+  background-color: aqua;
+  padding: 0 30px;
+  width: 1500px;
+  margin: 0 2px;
+  border: 1px solid cornflowerblue;
+  flex-grow: 1;
+}
+.left-box {
+  background-color: bisque;
+  padding: 0 10px;
+  width: 200px;
+  margin: 0 2px;
+  border: 1px solid cornflowerblue;
+}
